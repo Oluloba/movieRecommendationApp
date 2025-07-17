@@ -89,11 +89,11 @@ I.e., Key is - Authorization and Value is - Bearer - j56*************
 
 ### Dashboard View
 
-![Dashboard Screenshot](<movie-app-backend/images/Screenshot 1.png>) alt="Dashboard Screenshot"(<movie-app-backend\images\Screenshot 1.png>)
+![Dashboard Screenshot](<movie-app-backend/images/Screenshot 1.png>) alt="Dashboard Screenshot"
 
-![Dashboard Screenshot2](<movie-app-backend/images/Screenshot 2.png>) alt="Dashboard second page "(<movie-app-frontend\images\Screenshot 2.png>)
+![Dashboard Screenshot2](<movie-app-backend/images/Screenshot 2.png>) alt="Dashboard second page "
 
-![Dashboard Screenshot](<movie-app-backend/images/Screenshot 3.png>) alt="Dashboard third page"(<movie-app-frontend\images\Screenshot 3.png>)
+![Dashboard Screenshot](<movie-app-backend/images/Screenshot 3.png>) alt="Dashboard third page"
 
 ### Login Page
 
