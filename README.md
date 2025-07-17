@@ -1,8 +1,12 @@
 # 🎬 Movie Recommendation App
 
-A full-stack movie recommendation application built with React, Node.js, Express, MongoDB, and JWT authentication. This app fetches popular movies from The Movie Database (TMDb) API and allows users to register, login, and access Popular Movies based on Ratings.
+A full-stack web application that helps users discover movies, search by genre, year, popularity, and also save their favorites movies. This app integrates with the TMDb (The Movie Database) API to provide up-to-date movie data.
 
----
+The project is structured with separate backend and frontend folders:
+
+backend/ — REST API built with Node.js, Express, and Prisma for database management.
+
+frontend/ — React.js user interface for seamless interaction and visualization.
 
 ## Features
 
