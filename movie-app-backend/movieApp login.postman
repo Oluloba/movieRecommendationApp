@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "b7336732-40d1-48e8-9291-dc640d3678b5",
+		"name": "movieApp login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46494333",
+		"_collection_link": "https://www.postman.com/oluwatobilobaaladejare/workspace/oluwatobiloba-aladejare-s-workspace/collection/46494333-b7336732-40d1-48e8-9291-dc640d3678b5?action=share&source=collection_link&creator=46494333"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"lagbaja\",\r\n  \"email\": \"tamedo@email.com\",\r\n  \"password\": \"justlogin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"tamedo@email.com\",\r\n  \"password\": \"justlogin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

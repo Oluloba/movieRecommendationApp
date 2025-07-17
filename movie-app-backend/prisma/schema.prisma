@@ -1,0 +1,43 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Review {
+  id        Int      @id @default(autoincrement())
+  rating    Int
+  comment   String?
+  movieId   Int
+  userId    Int
+  createdAt DateTime @default(now())
+
+  movie Movie @relation(fields: [movieId], references: [id])
+  user  User  @relation(fields: [userId], references: [id])
+}
+
+model Movie {
+  id          Int      @id @default(autoincrement())
+  tmdbId      Int      @unique
+  title       String
+  genres      String // 'Action', 'Drama'
+  likedBy     User[]   @relation("LikedMovies")
+  favoritedBy User[]   @relation("Favorites")
+  inWatchlist User[]   @relation("Watchlist")
+  reviews     Review[]
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  username String
+  email    String @unique
+  password String
+
+  likedMovies Movie[]  @relation("LikedMovies")
+  favorites   Movie[]  @relation("Favorites")
+  watchlist   Movie[]  @relation("Watchlist")
+  reviews     Review[]
+}
