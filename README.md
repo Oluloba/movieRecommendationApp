@@ -76,11 +76,61 @@ npm start
 
 ### Dashboard View
 
-![Dashboard Screenshot](<movie-app-frontend/images/Screenshot 1.png>) alt="Dashboard Screenshot"(<movie-app-frontend\images\Screenshot 2.png>)
+![Dashboard Screenshot](<movie-app-backend/images/Screenshot 1.png>) alt="Dashboard Screenshot"(<movie-app-backend\images\Screenshot 1.png>)
+
+![Dashboard Screenshot2](<movie-app-backend/images/Screenshot 2.png>) alt="Dashboard second page "(<movie-app-frontend\images\Screenshot 2.png>)
+
+![Dashboard Screenshot](<movie-app-backend/images/Screenshot 3.png>) alt="Dashboard third page"(<movie-app-frontend\images\Screenshot 3.png>)
 
 ### Login Page
 
-![Login Screenshot](<movie-app-frontend/images/Screenshot login page.png>)
+![Login Screenshot](<movie-app-backend/images/Screenshot login page.png>)
+
+## Deployment
+
+This app is currently **not deployed** to a public domain.
+
+To test and use the app, please follow the instructions below to run it locally on your machine.
+
+
+
+1. Clone the repository:  
+   git clone https://github.com/Oluoba/movieRecommendationApp.git
+2. Install dependencies:
+    npm install
+3. Create a .env file in the root directory with the following variables: 
+    DATABASE_URL="your_database_connection_string"
+    TMDB_API_KEY="your_tmdb_api_key"
+    JWT_SECRET="your_jwt_secret"
+4. Run Prisma migrations (I used mongoose initialy):
+    npx prisma migrate dev --name init
+
+5. Start the server:
+    node server.js
+6. Use Postman or any API client to test endpoints at http://localhost:PORT/api/... (replace PORT with your server port, usually 3000, 5000 or as configured). 
+
+### Testing with Postman
+◾ Use the Register endpoint to create a user:
+POST http://localhost:5000/api/auth/register
+Body example (JSON):
+
+{
+  "username": "yourusername",
+  "email": "youremail@address.com",
+  "password": "yourpassword"
+}
+
+◾ Use the Login endpoint to authenticate:
+POST http://localhost:5000/api/auth/login
+Body example (JSON):
+
+{
+  "email": "youremail@address.com",
+  "password": "yourpassword"
+}
+◾ Use the returned JWT token in your requests to protected routes by setting the header:
+Authorization: Bearer YOUR_JWT_TOKEN 
+I.e., Key is - Authorization and Value is - Bearer - j56*************
 
 ## License
 This project is intended as a learning/demo project; for production, add further security and error handling.
