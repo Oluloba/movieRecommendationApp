@@ -53,8 +53,9 @@ cd movie-app-frontend
 	REACT_APP_API_URL=http://localhost:5000
 	REACT_APP_TMDB_API_KEY=your_tmdb_api_key
  ### Notes
-✅ Keep your TMDb API key secure; never expose it publicly. Add your .env file to .gitignore. 
-✅ JWT authentication protects user data and routes.
+✅ Keep your TMDb API key secure; never expose it publicly. Add your .env file to .gitignore
+
+✅ Make use of JWT authentication to protects user data and routes
 
 ◾◾ Install dependencies and Run Prisma migrations (I used mongoose initialy):
     npx prisma migrate dev --name init
@@ -65,7 +66,7 @@ cd movie-app-frontend
 ### Testing with Postman
 ◾ Use the Register endpoint to create a user:
 POST http://localhost:5000/api/auth/register
-Body example (JSON):
+Body example in the Postman (JSON):
 
 {
   "username": "yourusername",
@@ -74,7 +75,8 @@ Body example (JSON):
 }
 
 ◾ Use the Login endpoint to authenticate:
-POST http://localhost:5000/api/auth/login
+
+"POST" http://localhost:5000/api/auth/login
 Body example (JSON):
 
 {
@@ -82,7 +84,7 @@ Body example (JSON):
   "password": "yourpassword"
 }
 
-◾ Use the returned JWT token in your requests to protected routes by setting the header:
+◾ Use the returned JWT token in your requests to protect routes; Set the header (❗Still in Postman)
 Authorization: Bearer YOUR_JWT_TOKEN 
 I.e., Key is - Authorization and Value is - Bearer - j56*************
 
