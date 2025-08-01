@@ -59,8 +59,10 @@ cd movie-app-frontend
 
 ◾◾ Install dependencies and Run Prisma migrations (I used mongoose initialy):
     npx prisma migrate dev --name init
+
 ◾◾ Start the server:
     node server.js
+
 ◾◾ Use Postman or any API client to test endpoints at http://localhost:PORT/api/... (replace PORT with your server port, usually 3000, 5000 or as configured). 
 
 ### Testing with Postman
