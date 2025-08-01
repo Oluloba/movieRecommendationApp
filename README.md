@@ -102,7 +102,7 @@ I.e., Key is - Authorization and Value is - Bearer - j56*************
 
 ![Login Screenshot](<movie-app-backend/images/Screenshot login page.png>)
 
-** App Features **
+## App Features ##
 ◾ Register a new user or login with existing credentials
 ◾ Browse popular movies on the dashboard
 ◾ Access your profile to update user information
