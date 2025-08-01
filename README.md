@@ -17,9 +17,8 @@ frontend/ — React.js user interface for seamless interaction and visualization
 - Clean UI with React Router navigation
 - Backend API built with Node.js, Express, and MongoDB
 
----
 
-## Technologies Used
+## What was used
 
 - **Frontend:** React, React Router, Axios, CSS
 - **Backend:** Node.js, Express, postgreSQL, JWT
@@ -52,6 +51,7 @@ cd movie-app-frontend
 ◾◾ Create a .env file:
 	REACT_APP_API_URL=http://localhost:5000
 	REACT_APP_TMDB_API_KEY=your_tmdb_api_key
+ 
  ### Notes
 ✅ Keep your TMDb API key secure; never expose it publicly. Add your .env file to .gitignore
 
@@ -85,6 +85,7 @@ Body example (JSON):
 }
 
 ◾ Use the returned JWT token in your requests to protect routes; Set the header (❗Still in Postman)
+
 Authorization: Bearer YOUR_JWT_TOKEN 
 I.e., Key is - Authorization and Value is - Bearer - j56*************
 
@@ -104,9 +105,13 @@ I.e., Key is - Authorization and Value is - Bearer - j56*************
 
 ## App Features ##
 ◾ Register a new user or login with existing credentials
+
 ◾ Browse popular movies on the dashboard
+
 ◾ Access your profile to update user information
+
 ◾ Add movies to favorites, delet from favorites, like a movie, leave a review
+
 ◾ Log out securely
 
 ## License
