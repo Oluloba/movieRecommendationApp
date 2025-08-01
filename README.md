@@ -81,6 +81,7 @@ Body example (JSON):
   "email": "youremail@address.com",
   "password": "yourpassword"
 }
+
 ◾ Use the returned JWT token in your requests to protected routes by setting the header:
 Authorization: Bearer YOUR_JWT_TOKEN 
 I.e., Key is - Authorization and Value is - Bearer - j56*************
